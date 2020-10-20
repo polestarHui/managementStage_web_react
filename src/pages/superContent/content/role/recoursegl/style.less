@@ -1,0 +1,61 @@
+.recourseMain {
+  .recourseMainHead {
+    width: 100%;
+    button {
+      margin-right: 20px;
+    }
+    margin-bottom: 10px;
+  }
+  .recourseMainCont {
+    display: flex;
+    flex-flow: row nowrap;
+    :global {
+      .ant-table-wrapper {
+        width: 500px;
+      }
+    }
+    .recourseMainContRight {
+      width: auto;
+      box-sizing: border-box;
+      padding: 0px 30px;
+      .rcRight {
+        width: 100%;
+        background-color: #fff;
+        border-radius: 2px;
+        padding: 20px;
+        padding-top: 0;
+        header {
+          width: 100%;
+          line-height: 44px;
+          border-bottom: 1px solid #f6f6f6;
+          padding-left: 20px;
+          font-size: 16px;
+        }
+        .rcRightCont {
+          margin-top: 20px;
+          padding: 0 60px;
+          .recMainRow {
+            display: grid;
+            grid-template-columns: 100px 200px;
+            .recMainRowSpan {
+              text-align: right;
+              color: #666;
+              width: 100px;
+              padding-right: 20px;
+            }
+            :global {
+              .ant-upload-list {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+    :global {
+      .ant-pagination {
+        display: none;
+      }
+    }
+  }
+}

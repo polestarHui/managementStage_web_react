@@ -1,0 +1,81 @@
+.input {
+  display: inline-block;
+  min-width: 100px;
+  position: relative;
+
+  i {
+    position: absolute;
+    color: #999;
+    font-size: 16px;
+    top: 0;
+    right: 8px;
+  }
+
+  :global {
+    .icons {
+      position: absolute;
+      color: #999;
+      font-size: 16px;
+      top: 0;
+      right: 8px;
+      text-align: center;
+
+      i {
+        position: static !important;
+        padding: 0 2px;
+      }
+    }
+  }
+
+  input {
+    outline: none;
+    border: 1px solid #000;
+    border-radius: 3px;
+    padding: 7px 30px 7px 10px;
+    font-size: 12px;
+    color: #888;
+    height: 30px;
+    line-height: 20px;
+    width: calc(~'100%');
+
+    &:focus {
+      outline: none;
+    }
+
+    &::-webkit-input-placeholder {
+      /* WebKit browsers */
+      color: #888;
+    }
+
+    &::-moz-placeholder {
+      /* Mozilla Firefox 19+ */
+      color: #888;
+    }
+
+    &:-ms-input-placeholder {
+      /* Internet Explorer 10+ */
+      color: #888;
+    }
+  }
+}
+
+.tooltips {
+  display: block;
+  max-height: 100px;
+  width: 100%;
+  background: white;
+  overflow: auto;
+  border-radius: 5px;
+
+  a {
+    display: block;
+    height: 30px;
+    padding: 5px 10px;
+    white-space: nowrap;
+    line-height: 20px;
+
+    &:hover {
+      background: rgba(0, 0, 0, 0.1);
+    }
+  }
+}

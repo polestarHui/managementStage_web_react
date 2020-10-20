@@ -1,0 +1,33 @@
+.roleMain {
+  .roleMainHead {
+    width: 100%;
+    margin-bottom: 10px;
+    button {
+      margin-right: 20px;
+    }
+  }
+  .roleMainCont {
+    :global {
+      .ant-table-pagination-right {
+        justify-content: center;
+      }
+      .ant-select-selector {
+        display: none;
+      }
+      .ant-table {
+        .ant-btn-link {
+          padding: 0;
+        }
+      }
+    }
+  }
+}
+:global {
+  .ant-checkbox-group {
+    .ant-checkbox-wrapper {
+      margin-left: 0;
+      margin-bottom: 10px;
+      margin-right: 8px;
+    }
+  }
+}

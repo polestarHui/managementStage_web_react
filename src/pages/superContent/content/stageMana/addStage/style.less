@@ -1,0 +1,42 @@
+.addWrap {
+  width: 100%;
+  height: max-content;
+  .itemWrap {
+    margin: 15px 0;
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 15px;
+    border-right: 5px;
+    box-shadow: 1px 1px 5px #eee;
+    .item {
+      display: flex;
+      margin-bottom: 15px;
+      div {
+        font-size: 14px;
+        line-height: 40px;
+        margin-right: 18px;
+      }
+      input {
+        height: 40px;
+        border: 1px solid #eee;
+        outline: none;
+        width: 35%;
+        padding: 10px;
+      }
+      textarea {
+        border: 1px solid #eee;
+        padding: 10px;
+        outline: none;
+        width: 75%;
+      }
+    }
+    .btnWrap {
+      width: 50%;
+      display: flex;
+    }
+  }
+}
